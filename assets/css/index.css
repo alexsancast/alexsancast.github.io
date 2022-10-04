@@ -1,0 +1,64 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    width: 100%;
+    min-height: 5em;
+    flex-flow: row wrap;
+}
+.header .img {
+    width: 270px;
+    height: 130px;
+}
+.header .ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .li {
+    margin: 0 1em;
+}
+
+.header .a{
+
+}
+
+/*Secciones*/
+.section {
+    width: 100%;
+    background-color: lawngreen;
+    min-height: 80vh;
+    margin: 1em 0;
+    text-align: center;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Wroks*/
+.section__project{
+    width: 90%;
+    background:lightcoral;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    gap: 1em;
+
+}
+
+.section__project article {
+
+}
