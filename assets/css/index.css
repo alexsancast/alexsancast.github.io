@@ -8,6 +8,7 @@
 	outline: none;
 }
 
+/*Nav bar*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -49,9 +50,8 @@
     align-items: center;
 }
 
-/*Wroks*/
 .section__project{
-    width: 90%;
+    width: 50%;
     background:lightcoral;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
@@ -60,5 +60,68 @@
 }
 
 .section__project article {
+    width: 100%;
+    min-height: 20vh;
+    background: lightpink;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 
 }
+
+
+
+/*Me*/
+
+.alexsancast h1 {
+
+}
+
+.alexsancast__social{
+    width: 100%;
+    background: orange;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.alexsancast__social li {
+    margin: 0 1em;
+    background: blue;
+
+
+}
+
+/*About me */
+.about h1 {
+    margin : 0 0 1rem ;
+
+}
+
+.about p {
+    max-width: 40em;
+    background: yellow;
+    margin: 0 0 1em;
+    text-align: left;
+
+
+}
+
+
+
+.alexsancast__social a{
+ 
+
+}
+/*Footer*/
+
+.footer {
+    background: green;
+    padding: 2em 0;
+}
+
