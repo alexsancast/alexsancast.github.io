@@ -1,4 +1,10 @@
 
+:root {
+    --title-font :  'Nova Round', cursive;
+    --sub-title-font : 'PT Sans', sans-serif;
+    
+  }
+
 *{
 	margin: 0;
 	padding: 0;
@@ -13,14 +19,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
-    width: 100%;
-    min-height: 5em;
+    width: 100vw;
+    min-height: 3em;
     flex-flow: row wrap;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15); 
+
 }
 .header .img {
-    width: 270px;
-    height: 130px;
+    width: 240px;
+    height: 120px;
 }
 .header .ul {
     display: flex;
@@ -29,21 +36,29 @@
 }
 
 .header .li {
-    margin: 0 1em;
+    margin: 0em 1em;
 }
 
 .header .a{
+    font-family: var(--sub-title-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: black;
+    
+}
 
+.header .a:hover {
+    border-bottom:  4px solid RGB(155,0,9);
+    transition: .5s cubic-bezier(0.075, 0.082, 0.165, 1);
+    
 }
 
 /*Secciones*/
 .section {
     width: 100%;
-    background-color: lawngreen;
     min-height: 80vh;
     margin: 1em 0;
     text-align: center;
-    
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -75,14 +90,43 @@
 
 /*Me*/
 
+.container__me .me__img img {
+    width: 380px;
+    height: 370px;
+    border-radius: 50%;
+    border:3px solid rgb(12, 11, 11);
+}
 .alexsancast h1 {
+    font-family: var(--title-font);
+    font-size: 4rem;
+    font-weight: 600;
+
+
+}
+
+.alexsancast h2 {
+    font-family: var(--sub-title-font);
+    font-size: 2rem;
+    font-weight: 200;
+    color: RGB(104,104,104);
+    border-bottom:  4px solid rgba(0,0,0,.7); 
+    padding: 0.2em ;
+
+
+}
+
+.alexsancast h3 {
+    font-family: var(--sub-title-font);
+    font-size: 2rem;
+    font-weight: 200;
+    color: RGB(104,104,104);
+    
 
 }
 
 .alexsancast__social{
+    padding: 0.5em;
     width: 100%;
-    background: orange;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -90,34 +134,64 @@
 
 }
 
+/* .section__line {
+
+    width: 100%;
+    height: 1px;
+    background-color:red;
+    transform: scale(0);
+    transform-origin: left bottom;
+    transition: transform .4s;
+} */
+
 .alexsancast__social li {
     margin: 0 1em;
-    background: blue;
+}
 
-
+.alexsancast__social img {
+    width: 35px;
+    height: 35px;
 }
 
 /*About me */
+
+
 .about h1 {
     margin : 0 0 1rem ;
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+    font-weight: 600;
+    border-bottom:  4px solid rgba(0,0,0,.7); 
+    padding: 0.2em ;
+
 
 }
 
 .about p {
-    max-width: 40em;
-    background: yellow;
+    font-family: var(--sub-title-font);
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: RGB(104,104,104);
+    max-width: 44em;
     margin: 0 0 1em;
     text-align: left;
 
 
 }
 
+/*Projects*/
 
-
-.alexsancast__social a{
- 
+.projects h1 {
+    margin : 0 0 1rem ;
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+    font-weight: 600;
+    border-bottom:  4px solid rgba(0,0,0,.7); 
+    padding: 0.2em ;
 
 }
+
+
 /*Footer*/
 
 .footer {
