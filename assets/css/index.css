@@ -10,24 +10,34 @@
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
-	border: none;
-	outline: none;
+	border: 0;
+	box-sizing: border-box;
 }
 
+
+
 /****************************Nav bar**********************************/
+
+
 .header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 80%;
     min-height: 3em;
     flex-flow: row wrap;
-    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15); 
+    box-shadow: 2px -2px 33px -9px rgba(0,0,0,0.75);
+    padding: 0 2em;
+    border-radius: 20px;
+    margin: 20px auto;
+
+  
 
 }
 .header .img {
-    width: 240px;
-    height: 120px;
+    width: 210px;
+    height: 100px;
 }
 .header .ul {
     display: flex;
@@ -48,7 +58,7 @@
 }
 
 .header .a:hover {
-    border-bottom:  4px solid RGB(155,0,9);
+    border-bottom:  4px solid rgb(155,0,9);
     transition: .5s cubic-bezier(0.075, 0.082, 0.165, 1);
     
 }
@@ -89,7 +99,7 @@
     font-size: 2rem;
     font-weight: 200;
     color: RGB(104,104,104);
-    border-bottom:  4px solid rgba(0,0,0,.7); 
+    border-bottom:  4px solid rgb(155,0,9); 
     padding: 0.2em ;
 
 
@@ -141,7 +151,7 @@
     font-family: var(--title-font);
     font-size: 3.5rem;
     font-weight: 600;
-    border-bottom:  4px solid rgba(0,0,0,.7); 
+    border-bottom:  4px solid rgb(155,0,9);
     padding: 0.2em ;
 
 
@@ -205,6 +215,29 @@
 
 }
 
+.project__avocado .project__title2 {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    backdrop-filter: blur(2.2rem);
+    opacity: 1;
+    transition: all .5s ease;
+    border-radius: 20px;
+    color: white;
+    font-family: var(--sub-title-font);
+    font-size: 2rem;
+  
+
+}
+
+
 .project__avocado .project__title:hover {
     opacity: 1;
 
@@ -215,7 +248,7 @@
     font-family: var(--title-font);
     font-size: 3.5rem;
     font-weight: 600;
-    border-bottom:  4px solid rgba(0,0,0,.7); 
+    border-bottom:  4px solid rgb(155,0,9);
     padding: 0.2em ;
 
 }
@@ -253,6 +286,7 @@
 .skills .skills__sections{
     display: flex;
     gap: 2rem ;
+    flex-wrap: wrap;
 
 }
 
@@ -261,7 +295,7 @@
     font-family: var(--title-font);
     font-size: 3.5rem;
     font-weight: 600;
-    border-bottom:  4px solid rgba(0,0,0,.7); 
+    border-bottom:  4px solid rgb(155,0,9);
     padding: 0.2em ;
 
 
@@ -276,23 +310,25 @@
 }
 
 .skills img{
-    width: 50px;
-    width: 50px;
+    width: 75px;
+    width: 75px;
     padding: 0.7em ;
 }
 
 .skills p {
     font-family: var(--sub-title-font);
     font-size: 1rem;
-    font-weight: 300px;
+    font-weight: 600px;
 }
 
 
 /*Footer*/
 
 .footer {
+    width: 100%;
+    height: 15vw ;
     background: green;
-    padding: 2em 0;
+    padding: 0em 0em;
 }
 
 
