@@ -25,16 +25,14 @@ html {
 
 
 .header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 3em;
+    min-height: 5em;
     flex-flow: row wrap;
-    box-shadow: 2px -2px 33px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 7px -6px rgba(0,0,0,0.75);
     padding: 0 7em;
-    border-radius: 20px;
     position: fixed;
     background-color: white;
     transition: all 0.6s ease;
@@ -340,7 +338,7 @@ html {
     font-size: 3.5rem;
     font-weight: 600;
     border-bottom:  4px solid rgb(155,0,9);
-    padding: 0.2em ;
+    padding: 0.0em ;
 
 
 }
