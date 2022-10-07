@@ -19,9 +19,7 @@ html {
   }
 
 
-.container{
-    margin-top: 150px;
-}
+
 
 /****************************Nav bar**********************************/
 
@@ -111,6 +109,11 @@ html {
 
 
 /*****************************ME******************************/
+
+
+.alexsancast {
+    padding-top: 10em;
+}
 
 .container__me .me__img img {
     width: 380px;
