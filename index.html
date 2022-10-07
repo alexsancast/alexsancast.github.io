@@ -13,28 +13,32 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img class="img" src="/assets/img/Alexsancast-Logo-01-01.png" alt="" />
+        <a href="#alexsancast"><img class="img" src="/assets/img/Alexsancast-Logo-01-01.png" alt="" /></a>
+        
       </div>
 
       <nav class="nav">
         <ul class="ul">
-          <li class="li"><a class="a" href="">About Me</a></li>
-          <li class="li"><a class="a" href="">Projects</a></li>
-          <li class="li"><a class="a" href="">Skills</a></li>
+          <li class="li"><a class="contact_a" href="#contact">Contact</a></li>
+          <li class="li"><a class="a" href="#about">About Me</a></li>
+          <li class="li"><a class="a" href="#projects">Projects</a></li>
+          <li class="li"><a class="a" href="#skills">Skills</a></li>
+          <li><div class="ball"></div></li>
+
         </ul>
       </nav>
     </header>
 
     <div class="container">
 
-        <section class="section alexsancast" id="experience">
+        <section class="section alexsancast" id="alexsancast">
             <div class="container__me">
                 <div class="me__img">
                   <img src="/assets/img/cast.jpeg" alt="" />
                 </div>
                 <div class="me_name">
                   <h3>Hi , I'm</h3>
-                  <h1>ALEXANDER CASTILLO</h1>
+                  <h1>ALEXANDER  <span class="cast"> CASTILLO</span> </h1>
                   <h2>Frontend Developer</h2>
                   <!-- <span class="section__line"></span> -->
                 </div>
@@ -81,11 +85,14 @@
 
 
             <div class="project__paragraph">
-              <p>Este proyecto esta basasdo en la ventas de aguacates en linea , la funcionalidad es sencilla , tiene su 
+              <p>Este proyecto esta basado en la ventas de aguacates en linea , la funcionalidad es sencilla , tiene su 
                 login y registro , esta hecho en vanilla JS , no implemente frameworks debido a que queria practicar un poco de 
-                JS
+                JS.
               </p>
+              <a href="https://github.com/alexsancast/avocadoshop"> 
                 <img src="/assets/img/github.png" alt="">
+              </a>
+                
             </div>
 
 
@@ -107,7 +114,7 @@
             <div class="project__paragraph">
               <p>Este estara basado en react  , es un proeycto de ventas y alguier de casas en linea , donde seremos los 
                 intermediarios!</p>
-                <img src="/assets/img/github.png" alt="">
+                <!-- <img src="/assets/img/github.png" alt=""> -->
             </div>
 
 
@@ -117,11 +124,6 @@
         </div>
       </section>
        
-
-
-      
-
-      
 
       <section class="section skills" id="skills">
         <h1>Skills</h1>
@@ -167,10 +169,36 @@
       </section>
 
 
-      <footer class="footer">
-        <p>Alexsancast</p>
+      <footer class="footer contact" id="contact">
+        <div class="contact__title">
+          <h1>Contact</h1>
+        </div>
+         
+        <div class="container__paragraph">
+
+          <div  class="contact__paragraph">
+            <img src="/assets/img/mail.png" alt="">
+            <p>alexsancast@outlook.com </p>
+          </div>
+  
+          
+          <div  class="contact__paragraph">
+            <img src="/assets/img/phone-call.png" alt="">
+            <p> 829-446-9096</p>
+          </div>
+
+          <div  class="contact__paragraph">
+            <img src="/assets/img/telegram.png" alt="">
+            <p> 829-406-2976 </p>
+          </div>
+
+
+        </div>
+   
 
       </footer>
     </div>
+    
+    <script src="/assets/js/index.js"></script>
   </body>
 </html>

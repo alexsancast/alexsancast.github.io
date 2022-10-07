@@ -14,7 +14,14 @@
 	box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
+
+.container{
+    margin-top: 150px;
+}
 
 /****************************Nav bar**********************************/
 
@@ -24,14 +31,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     min-height: 3em;
     flex-flow: row wrap;
     box-shadow: 2px -2px 33px -9px rgba(0,0,0,0.75);
-    padding: 0 2em;
+    padding: 0 7em;
     border-radius: 20px;
-    margin: 20px auto;
+    position: fixed;
+    background-color: white;
+    transition: all 0.6s ease;
+    z-index: 99;
 
+    
   
 
 }
@@ -55,7 +66,28 @@
     font-weight: 400;
     color: black;
     
+    
 }
+
+.header .contact_a{
+    
+    font-family: var(--sub-title-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(155,0,9);
+    padding: 0.5em 0.8em;
+    border-radius: 10px;
+
+
+}
+
+.ball{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(155,0,9);
+    border-radius: 50%; 
+ }
 
 .header .a:hover {
     border-bottom:  4px solid rgb(155,0,9);
@@ -94,6 +126,7 @@
 
 }
 
+
 .alexsancast h2 {
     font-family: var(--sub-title-font);
     font-size: 2rem;
@@ -122,6 +155,10 @@
     justify-content: center;
     align-items: center;
 
+}
+
+.alexsancast .cast {
+    color: rgb(155,0,9); ;
 }
 
 /* .section__line {
@@ -283,6 +320,10 @@
 
 /*************SKILLS**********************/
 
+.skills {
+    margin: -5em 0em;
+}
+
 .skills .skills__sections{
     display: flex;
     gap: 2rem ;
@@ -326,10 +367,45 @@
 
 .footer {
     width: 100%;
-    height: 15vw ;
-    background: green;
+    height: 20vw ;
+    background:  rgb(155,0,9);
     padding: 0em 0em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 0em 4em;
 }
 
+.footer h1 {
+
+    margin : 0 0 1rem ;
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+    font-weight: 600;
+    border-bottom:  4px solid rgb(245, 242, 242);
+    padding: 0.2em ;
+    color: white;
+
+}
+
+.footer .contact__paragraph {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 0em;
+    flex-wrap: wrap;
+}
+
+.footer .contact__paragraph p  {
+  font-family: var(--sub-title-font);
+  font-size: 1.5em;
+  padding: 0em 0.5em;
+  color: white;
+}
+
+.footer .contact__paragraph img{
+    width: 50px;
+    height: 50px;
+
+}
 
 /**/
