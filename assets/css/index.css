@@ -17,9 +17,7 @@
 html {
     scroll-behavior: smooth;
   }
-body{
-    position: relative;
-}  
+
 
 
 
@@ -33,7 +31,7 @@ body{
     align-items: center;
     width: 100%;
     min-height: 5em;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     box-shadow: 0px 5px 7px -6px rgba(0,0,0,0.75);
     padding: 0 7em;
     position: fixed;
@@ -533,14 +531,7 @@ body{
 @media screen and (max-width: 733px){
 
     .header {
-        min-height: 12em;
-    }
-
-}
-
-@media screen and (max-width: 524px){
-
-    .header {
+        padding: 0em 4em;
         min-height: 5em;
     }
 
@@ -554,6 +545,16 @@ body{
     }
 
 }
+
+@media screen and (max-width: 467px){
+
+    .header {
+        padding: 0em 1em;
+        min-height: 5em;
+    }
+}
+
+
 
 
 
