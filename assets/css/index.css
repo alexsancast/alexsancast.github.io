@@ -109,13 +109,14 @@ html {
 /*********************************MenuHam*************************************/
 
 .ham__bar{
-    background-color: rgb(241, 52, 61);
+    background-color: white;
     min-width: 17em;
     right: -280px;
     top: 0;
     height: 100%;
     z-index: 999;
     position: fixed;
+    transition: all 0.6s ease;
     
 }
 
@@ -134,8 +135,8 @@ html {
 }
 
 .ham__bar .close__img  {
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
 
 }
 
@@ -167,7 +168,7 @@ html {
     position: relative;
     margin: 1em 1em;
     width: 85%;
-    border-bottom:  1px solid white;
+    border-bottom:  2px solid rgb(155,0,9); ;
   
    
 }
@@ -176,7 +177,7 @@ html {
     font-family: var(--sub-title-font);
     font-size: 1rem;
     font-weight: 400;
-    color:white;
+    color:black;
  
   
     
