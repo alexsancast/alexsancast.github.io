@@ -293,7 +293,7 @@ html {
     font-weight: 200;
     color: RGB(104,104,104);
     max-width: 44em;
-    margin: 0 0 1em;
+    margin: 0 1em 1em;
     text-align: left;
 
 
@@ -302,7 +302,7 @@ html {
 /*********************Projects************************************/
 
 .section__project{
-    width: 50%;
+    width: 60%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
     gap: 2em;
