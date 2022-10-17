@@ -357,14 +357,13 @@ html {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    backdrop-filter: blur(2.2rem);
-    opacity: 1;
+    backdrop-filter: blur(0.2rem);
+    opacity: 0;
     transition: all .5s ease;
     border-radius: 20px;
     color: white;
     font-family: var(--sub-title-font);
     font-size: 2rem;
-  
 
 }
 
@@ -373,6 +372,13 @@ html {
     opacity: 1;
 
 }
+
+
+.project__avocado .project__title2:hover {
+    opacity: 1;
+
+}
+
 
 .projects h1 {
     margin : 0 0 1rem ;
